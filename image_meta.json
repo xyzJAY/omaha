@@ -1,0 +1,470 @@
+[
+  {
+    "query": "beautiful bridge over Missouri River at sunset",
+    "image_info": {
+      "url": "https://media-cdn.tripadvisor.com/media/photo-s/13/d2/ef/83/the-bridge-is-a-great.jpg",
+      "img_format": "JPEG",
+      "mode": "RGB",
+      "file_size": 59439,
+      "width": 550,
+      "height": 367,
+      "total_pixels": 201850,
+      "basic_score": 0.7531053202797482,
+      "file_name": "bob-kerrey-pedestrian-bridge-omaha-sunset.jpg"
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 100.0,
+      "clarity_score": 88.0,
+      "watermark_score": 100.0,
+      "overall_score": 92.0,
+      "explanation": "The image is a perfect match for the search query, featuring the Bob Kerrey Pedestrian Bridge in Omaha during a vibrant sunset. The composition is professional, using the bridge's curve as a leading line toward the sunset and the main pylon. The colors are rich, and the clarity is high, though there is a slight amount of HDR-related noise in the sky.",
+      "file_name": "bob-kerrey-pedestrian-bridge-omaha-sunset.jpg",
+      "caption": "A scenic sunset view of the Bob Kerrey Pedestrian Bridge over the Missouri River, showing pedestrians walking along the curved pathway against a backdrop of orange and purple skies.",
+      "recommend": true,
+      "error": ""
+    }
+  },
+  {
+    "query": "beautiful bridge over Missouri River at sunset",
+    "image_info": {
+      "url": "https://ohmyomaha.com/wp-content/uploads/2020/01/attractions_bkb_walk_f86c5fa5-ecad-8d8b-abbcaf52e1c1a8a1-e1580226059746.jpg",
+      "img_format": "JPEG",
+      "mode": "RGB",
+      "file_size": 27352,
+      "width": 599,
+      "height": 402,
+      "total_pixels": 240798,
+      "basic_score": 0.7628927326138544,
+      "file_name": "bob-kerrey-pedestrian-bridge-omaha-sunset.jpg_6a"
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 100.0,
+      "clarity_score": 70.0,
+      "watermark_score": 100.0,
+      "overall_score": 85.0,
+      "explanation": "The image perfectly matches the search query, showing the Bob Kerrey Pedestrian Bridge in Omaha at sunset. The composition is excellent, utilizing the bridge's cables as leading lines and capturing a pleasant silhouette of a couple walking. While the resolution is somewhat low, affecting fine detail, the overall aesthetic and relevance make it a strong choice.",
+      "file_name": "bob-kerrey-pedestrian-bridge-omaha-sunset.jpg",
+      "caption": "A silhouette of a couple walking hand-in-hand across the Bob Kerrey Pedestrian Bridge in Omaha, Nebraska, during a vibrant sunset with the city skyline in the background.",
+      "recommend": true,
+      "error": ""
+    }
+  },
+  {
+    "query": "beautiful bridge over Missouri River at sunset",
+    "image_info": {
+      "url": "https://media-cdn.tripadvisor.com/media/photo-m/1280/13/bd/1d/5b/bob-kerrey-pedestrian.jpg",
+      "img_format": "JPEG",
+      "mode": "RGB",
+      "file_size": 187526,
+      "width": 1280,
+      "height": 1280,
+      "total_pixels": 1638400,
+      "basic_score": 0.8376107621206236,
+      "file_name": "bob-kerrey-pedestrian-bridge-omaha-sunset.jpg_13"
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 95.0,
+      "clarity_score": 70.0,
+      "watermark_score": 100.0,
+      "overall_score": 78.0,
+      "explanation": "The image perfectly matches the search query and prompt, capturing the iconic pylon of the Bob Kerrey Pedestrian Bridge in Omaha during a sunset. While the colors are vibrant and the subject is clear, there is noticeable digital noise/grain in the sky and darker foreground areas, which slightly impacts the professional quality.",
+      "file_name": "bob-kerrey-pedestrian-bridge-omaha-sunset.jpg",
+      "caption": "A scenic view of the Bob Kerrey Pedestrian Bridge pylon and suspension cables against a colorful sunset sky over Omaha, Nebraska, with a public park and city buildings in the background.",
+      "recommend": true,
+      "error": ""
+    }
+  },
+  {
+    "query": "beautiful botanical garden blooms",
+    "image_info": {
+      "url": "https://assets.simpleviewinc.com/simpleview/image/upload/c_limit,h_1200,q_75,w_1200/v1/clients/omaha/_EF26206_e105e317-a183-4bc6-8e02-c190c0b290b0.jpg",
+      "img_format": "JPEG",
+      "mode": "RGB",
+      "file_size": 301001,
+      "width": 1200,
+      "height": 800,
+      "total_pixels": 960000,
+      "basic_score": 0.9508565253521989,
+      "file_name": "lauritzen-gardens-omaha-tulip-blooms.jpg"
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 100.0,
+      "clarity_score": 90.0,
+      "watermark_score": 100.0,
+      "overall_score": 94.0,
+      "explanation": "The image is a perfect match for the search query, featuring the iconic Marjorie K. Daugherty Conservatory at Lauritzen Gardens in Omaha. The foreground is filled with vibrant, beautiful tulip blooms as requested by the prompt. The composition is professional, and there are no watermarks.",
+      "file_name": "lauritzen-gardens-omaha-tulip-blooms.jpg",
+      "caption": "A stunning display of orange and yellow tulips in full bloom at Lauritzen Gardens in Omaha, Nebraska, featuring the glass conservatory and visitor center in the background.",
+      "recommend": true,
+      "error": ""
+    }
+  },
+  {
+    "query": "beautiful botanical garden blooms",
+    "image_info": {
+      "url": "https://live.staticflickr.com/4267/35430970972_2e941ae042_b.jpg",
+      "img_format": "JPEG",
+      "mode": "RGB",
+      "file_size": 342484,
+      "width": 1024,
+      "height": 681,
+      "total_pixels": 697344,
+      "basic_score": 0.9251269321634057,
+      "file_name": "lauritzen-gardens-omaha-botanical-blooms.jpg"
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 100.0,
+      "clarity_score": 85.0,
+      "watermark_score": 100.0,
+      "overall_score": 92.0,
+      "explanation": "The image perfectly matches the search query and prompt, depicting a scenic view of Lauritzen Gardens in Omaha. The composition features vibrant flower beds with yellow and red celosia and canna lilies, a central fountain, and well-maintained garden paths. The clarity is good for general use, and there are no watermarks.",
+      "file_name": "lauritzen-gardens-omaha-botanical-blooms.jpg",
+      "caption": "A colorful display of blooming flowers, including yellow and red celosia, in a formal garden layout at Lauritzen Gardens in Omaha, Nebraska, featuring a central fountain and lush green trees in the background.",
+      "recommend": true,
+      "error": ""
+    }
+  },
+  {
+    "query": "beautiful botanical garden blooms",
+    "image_info": {
+      "url": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2a/e5/7a/6b/caption.jpg?w=1200&h=1200&s=1",
+      "img_format": "JPEG",
+      "mode": "RGB",
+      "file_size": 729929,
+      "width": 1200,
+      "height": 1200,
+      "total_pixels": 1440000,
+      "basic_score": 0.9127741546108642,
+      "file_name": "lauritzen-gardens-botanical-flowers-moth-sculpture.jpg"
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 95.0,
+      "clarity_score": 90.0,
+      "watermark_score": 100.0,
+      "overall_score": 92.0,
+      "explanation": "The image perfectly captures the essence of a botanical garden with vibrant floral displays and an artistic moth sculpture. It is highly relevant to the search query for Lauritzen Gardens and the prompt for beautiful blooms. The clarity is excellent and there are no distracting watermarks.",
+      "file_name": "lauritzen-gardens-botanical-flowers-moth-sculpture.jpg",
+      "caption": "A scenic view of a botanical garden featuring lush beds of orange and purple flowers, centered with a decorative stained-glass moth sculpture and an educational sign about the Burnet Moth.",
+      "recommend": true,
+      "error": ""
+    }
+  },
+  {
+    "query": "beautiful botanical garden blooms",
+    "image_info": {
+      "url": "https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,h_675,q_75,w_1200/v1/clients/omaha/Lauritzen_Daffodils_ffe7ee1d-d327-46e8-a8ca-2218c0d60130.jpg",
+      "img_format": "JPEG",
+      "mode": "RGB",
+      "file_size": 185822,
+      "width": 1200,
+      "height": 675,
+      "total_pixels": 810000,
+      "basic_score": 0.9277235774264945,
+      "file_name": "lauritzen-gardens-omaha-daffodil-field.jpg"
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 95.0,
+      "clarity_score": 75.0,
+      "watermark_score": 100.0,
+      "overall_score": 85.0,
+      "explanation": "The image perfectly matches the search query and prompt, likely depicting the famous daffodil display at Lauritzen Gardens in Omaha. The composition is good, featuring a family enjoying the blooms, though the sharpness on the subjects is a bit soft and the lighting is somewhat flat.",
+      "file_name": "lauritzen-gardens-omaha-daffodil-field.jpg",
+      "caption": "A family walks past a vibrant field of yellow and white daffodils in bloom at Lauritzen Gardens in Omaha, Nebraska.",
+      "recommend": true,
+      "error": ""
+    }
+  },
+  {
+    "query": "stunning zoo animals exhibit for hero background",
+    "image_info": {
+      "url": "https://www.omahamagazine.com/wp-content/uploads/sites/2/wpallimport/files/3445-Sartore_crocodile-600x400.jpg",
+      "img_format": "JPEG",
+      "mode": "RGB",
+      "file_size": 21617,
+      "width": 600,
+      "height": 400,
+      "total_pixels": 240000,
+      "basic_score": 0.7616953640560208,
+      "file_name": "gharial-portrait-henry-doorly-zoo.jpg"
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 85.0,
+      "clarity_score": 100.0,
+      "watermark_score": 100.0,
+      "overall_score": 92.0,
+      "explanation": "This is a professional studio-style portrait of a gharial, a species frequently housed at the Henry Doorly Zoo. The image is exceptionally clear and visually striking, fitting the 'stunning' requirement for a hero background perfectly. While it doesn't show a wide 'exhibit' view, its high-impact composition makes it ideal for professional web design.",
+      "file_name": "gharial-portrait-henry-doorly-zoo.jpg",
+      "caption": "A striking, high-resolution profile portrait of a gharial with its mouth agape, revealing rows of teeth, set against a stark black background.",
+      "recommend": true,
+      "error": ""
+    }
+  },
+  {
+    "query": "stunning zoo animals exhibit for hero background",
+    "image_info": {
+      "url": "https://www.postcardsfromsurprisingplaces.com/uploads/1/7/7/7/17777259/5543989_orig.jpg?336",
+      "img_format": "JPEG",
+      "mode": "RGB",
+      "file_size": 286542,
+      "width": 1100,
+      "height": 779,
+      "total_pixels": 856900,
+      "basic_score": 0.9409842404961328,
+      "file_name": "henry-doorly-zoo-omaha-lemurs-exhibit.jpg"
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 80.0,
+      "clarity_score": 88.0,
+      "watermark_score": 100.0,
+      "overall_score": 85.0,
+      "explanation": "The image features a high-quality, intimate close-up of two lemurs, which are common inhabitants of the Henry Doorly Zoo. The clarity on the fur and the striking orange eyes is excellent. While the tight composition might be challenging for a hero background that requires negative space for text, the professional quality and absence of watermarks make it a strong candidate for zoo-related content.",
+      "file_name": "henry-doorly-zoo-omaha-lemurs-exhibit.jpg",
+      "caption": "A detailed close-up of two lemurs with vibrant orange eyes resting together in a zoo exhibit, showcasing their textured fur and expressive faces.",
+      "recommend": true,
+      "error": ""
+    }
+  },
+  {
+    "query": "stunning zoo animals exhibit for hero background",
+    "image_info": {
+      "url": "https://midwestwanderer.com/wp-content/uploads/2014/09/Gorilla-2.jpg",
+      "img_format": "JPEG",
+      "mode": "RGB",
+      "file_size": 593176,
+      "width": 1131,
+      "height": 864,
+      "total_pixels": 977184,
+      "basic_score": 0.9669179886956979,
+      "file_name": "gorilla-exhibit-henry-doorly-zoo-omaha.jpg"
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 95.0,
+      "clarity_score": 75.0,
+      "watermark_score": 100.0,
+      "overall_score": 80.0,
+      "explanation": "The image is highly relevant to the search query, featuring a gorilla which is a major attraction at the Omaha Henry Doorly Zoo. The clarity is good for web use, though it lacks the extreme sharpness of professional commercial photography. There are no watermarks, and the composition is well-centered, making it suitable for a hero background or informational content.",
+      "file_name": "gorilla-exhibit-henry-doorly-zoo-omaha.jpg",
+      "caption": "A majestic silverback gorilla resting in its lush, green habitat at the Henry Doorly Zoo and Aquarium in Omaha, Nebraska.",
+      "recommend": true,
+      "error": ""
+    }
+  },
+  {
+    "query": "charming Old Market district street scene golden hour",
+    "image_info": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Old_Market_Neighborhood%2C_Omaha.jpg",
+      "img_format": "JPEG",
+      "mode": "RGB",
+      "file_size": 706371,
+      "width": 1024,
+      "height": 663,
+      "total_pixels": 678912,
+      "basic_score": 0.9393794412168179,
+      "file_name": "omaha-old-market-cobblestone-street-golden-hour.jpg"
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 98.0,
+      "clarity_score": 90.0,
+      "watermark_score": 100.0,
+      "overall_score": 92.0,
+      "explanation": "The image is a perfect match for the search query and prompt. it captures the historic brick architecture and cobblestone streets of Omaha's Old Market district during the golden hour. The presence of the blue 'OMAHA' globe sign provides excellent locational context.",
+      "file_name": "omaha-old-market-cobblestone-street-golden-hour.jpg",
+      "caption": "A picturesque view of the historic Old Market district in Omaha, Nebraska, featuring red brick buildings, cobblestone streets, and the iconic blue Omaha globe sign under a clear sky during the golden hour.",
+      "recommend": true,
+      "error": ""
+    }
+  },
+  {
+    "query": "charming Old Market district street scene golden hour",
+    "image_info": {
+      "url": "https://omahaguide.com/wp-content/uploads/2021/06/old-market-street-corner.jpg",
+      "img_format": "JPEG",
+      "mode": "RGB",
+      "file_size": 170539,
+      "width": 1482,
+      "height": 834,
+      "total_pixels": 1235988,
+      "basic_score": 0.9284197566459065,
+      "file_name": "omaha-old-market-cobblestone-street.jpg"
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 95.0,
+      "clarity_score": 82.0,
+      "watermark_score": 100.0,
+      "overall_score": 88.0,
+      "explanation": "The image perfectly captures the essence of Omaha's Old Market district, featuring the characteristic cobblestone streets and historic brick architecture mentioned in the query. It includes recognizable landmarks like the Spaghetti Works building. The lighting is bright and pleasant, though perhaps slightly less 'golden' than a typical golden hour shot. Clarity is good for a wide street scene, and there are no distracting watermarks.",
+      "file_name": "omaha-old-market-cobblestone-street.jpg",
+      "caption": "A sunny afternoon street scene in Omaha's historic Old Market district, featuring cobblestone roads, red brick buildings, and vibrant flower beds.",
+      "recommend": true,
+      "error": ""
+    }
+  },
+  {
+    "query": "charming Old Market district street scene golden hour",
+    "image_info": {
+      "url": "https://www.oldmarket.com/images/Slider2-Carriage-jpg.jpg",
+      "img_format": "JPEG",
+      "mode": "RGB",
+      "file_size": 467430,
+      "width": 1275,
+      "height": 850,
+      "total_pixels": 1083750,
+      "basic_score": 0.9619294228122907,
+      "file_name": "omaha-old-market-horse-carriage-golden-hour.jpg"
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 100.0,
+      "clarity_score": 80.0,
+      "watermark_score": 75.0,
+      "overall_score": 85.0,
+      "explanation": "The image is a perfect match for the search query and prompt, featuring a horse-drawn carriage on the brick streets of Omaha's Old Market district during golden hour. The iconic Spaghetti Works building is clearly visible in the background. While the image has good clarity and composition, the baked-in 'Old World Charm' text overlay acts as a stylistic watermark, which might limit its use in contexts requiring a clean photograph.",
+      "file_name": "omaha-old-market-horse-carriage-golden-hour.jpg",
+      "caption": "A white horse-drawn carriage carrying passengers travels across a brick-paved street in Omaha's historic Old Market district, with the iconic Spaghetti Works restaurant and vintage brick buildings in the background under warm golden hour light.",
+      "recommend": true,
+      "error": ""
+    }
+  },
+  {
+    "query": "charming Old Market district street scene golden hour",
+    "image_info": {
+      "url": "https://live.staticflickr.com/88/249236757_46c68bbf93_b.jpg",
+      "img_format": "JPEG",
+      "mode": "RGB",
+      "file_size": 232386,
+      "width": 1024,
+      "height": 683,
+      "total_pixels": 699392,
+      "basic_score": 0.9162330638928858,
+      "file_name": "omaha-old-market-brick-cobblestone-street.jpg"
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 92.0,
+      "clarity_score": 70.0,
+      "watermark_score": 100.0,
+      "overall_score": 82.0,
+      "explanation": "The image perfectly captures the iconic Omaha Old Market district, including the characteristic brick-paved (cobblestone-style) streets and historic architecture. While the lighting is bright and pleasant, it lacks the specific warm, low-sun glow typically associated with 'golden hour'. The image has a slightly grainy, film-like quality which adds to its charm but reduces modern digital clarity.",
+      "file_name": "omaha-old-market-brick-cobblestone-street.jpg",
+      "caption": "A wide-angle view of the historic Old Market district in Omaha, Nebraska, featuring red brick buildings, a brick-paved street with cars, and pedestrians under a clear blue sky.",
+      "recommend": true,
+      "error": ""
+    }
+  },
+  {
+    "query": "vibrant nightlife food district scene",
+    "image_info": {
+      "url": "https://assets.simpleviewinc.com/simpleview/image/upload/c_limit,h_1200,q_75,w_1200/v1/clients/omaha/Blackstone_e789763d-816e-4a42-a635-6f28cf81c821.jpg",
+      "img_format": "JPEG",
+      "mode": "RGB",
+      "file_size": 162305,
+      "width": 1200,
+      "height": 800,
+      "total_pixels": 960000,
+      "basic_score": 0.9390558244090642,
+      "file_name": "blackstone-district-omaha-nightlife-street-scene.jpg"
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 100.0,
+      "clarity_score": 85.0,
+      "watermark_score": 100.0,
+      "overall_score": 92.0,
+      "explanation": "The image perfectly matches the search query, featuring the 'Blackstone District' signage prominently. It captures a vibrant dusk scene with people walking and city lights, effectively representing Omaha's nightlife. The composition is strong, and while there is some typical low-light grain, the focus on the main elements is sharp.",
+      "file_name": "blackstone-district-omaha-nightlife-street-scene.jpg",
+      "caption": "A street-level view of the Blackstone District in Omaha at dusk, featuring a large 'Blackstone District' mural on a dark brick wall with pedestrians and city traffic in the background.",
+      "recommend": true,
+      "error": ""
+    }
+  },
+  {
+    "query": "vibrant nightlife food district scene",
+    "image_info": {
+      "url": "https://images.squarespace-cdn.com/content/v1/54e8300be4b0dc5d503132c6/1550850811863-G1CHWBEU0Y2WW0FUJ3H5/Screen+Shot+2019-02-22+at+9.44.33+AM.png",
+      "img_format": "WEBP",
+      "mode": "RGB",
+      "file_size": 1944072,
+      "width": 1736,
+      "height": 1148,
+      "total_pixels": 1992928,
+      "basic_score": 0.7062289373804296,
+      "file_name": "blackstone-social-omaha-nightlife-district.jpg"
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 98.0,
+      "clarity_score": 85.0,
+      "watermark_score": 100.0,
+      "overall_score": 92.0,
+      "explanation": "The image is an authentic and highly relevant depiction of the Blackstone District's nightlife, specifically showing the interior of Blackstone Social. It captures the 'vibrant nightlife' prompt perfectly with an active bar scene, patrons, and characteristic industrial-chic decor.",
+      "file_name": "blackstone-social-omaha-nightlife-district.jpg",
+      "caption": "A busy interior view of Blackstone Social in Omaha, Nebraska, showcasing the vibrant nightlife with patrons at the bar, exposed brick walls, and industrial-style lighting.",
+      "recommend": true,
+      "error": ""
+    }
+  },
+  {
+    "query": "vibrant nightlife food district scene",
+    "image_info": {
+      "url": "https://images.squarespace-cdn.com/content/v1/54e8300be4b0dc5d503132c6/e18bd868-eb1b-4f79-8dc2-555d24dcee9f/Lights.jpg",
+      "img_format": "WEBP",
+      "mode": "RGB",
+      "file_size": 222290,
+      "width": 1280,
+      "height": 720,
+      "total_pixels": 921600,
+      "basic_score": 0.9513425072002526,
+      "file_name": "blackstone-district-omaha-nightlife-alley.jpg"
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 100.0,
+      "clarity_score": 75.0,
+      "watermark_score": 100.0,
+      "overall_score": 88.0,
+      "explanation": "The image perfectly matches the search query as it explicitly features the 'Blackstone Alley' sign, a central part of Omaha's Blackstone District. It captures the vibrant nightlife atmosphere with festive purple string lights and a social gathering. While there is some minor noise typical of low-light photography, the composition and relevance are top-tier.",
+      "file_name": "blackstone-district-omaha-nightlife-alley.jpg",
+      "caption": "An elevated nighttime view of Blackstone Alley in Omaha's Blackstone District, showcasing vibrant purple string lights, a large illuminated sign, and a crowd of people enjoying the nightlife scene.",
+      "recommend": true,
+      "error": ""
+    }
+  },
+  {
+    "query": "vibrant nightlife food district scene",
+    "image_info": {
+      "url": "https://static.where-e.com/United_States/Blackstone-Social_1879f4dfa836d3284aa408de4a821052.jpg",
+      "img_format": "JPEG",
+      "mode": "RGB",
+      "file_size": 146832,
+      "width": 1000,
+      "height": 563,
+      "total_pixels": 563000,
+      "basic_score": 0.8778497839008442,
+      "file_name": "blackstone-district-omaha-nightlife-blackstone-social.jpg"
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 100.0,
+      "clarity_score": 70.0,
+      "watermark_score": 100.0,
+      "overall_score": 82.0,
+      "explanation": "The image is perfectly relevant as it features 'Blackstone Social,' a prominent establishment in Omaha's Blackstone District. It captures the nightlife atmosphere effectively. However, the image has some technical flaws, including noticeable lens flare and low-light noise, and the composition is slightly cluttered by the car in the foreground.",
+      "file_name": "blackstone-district-omaha-nightlife-blackstone-social.jpg",
+      "caption": "An evening shot of the Blackstone Social bar in Omaha's Blackstone District, capturing the vibrant nightlife and street scene with patrons visible through the open front.",
+      "recommend": true,
+      "error": ""
+    }
+  }
+]
