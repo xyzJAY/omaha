@@ -15,10 +15,10 @@
 
     <style>
         :root {
-            --primary: #003366;
-            --primary-dark: #002244;
-            --accent: #FF6200;
-            --accent-light: #FF8533;
+            --primary: #0066CC;
+            --primary-dark: #004C99;
+            --accent: #FF6B35;
+            --accent-light: #FF8559;
             --green: #2D8C3C;
             --white: #FFFFFF;
             --cream: #FAFAF8;
@@ -155,13 +155,16 @@
             text-decoration: none;
             font-weight: 600;
             transition: var(--transition);
-            box-shadow: 0 4px 15px rgba(255,98,0,0.3);
+            box-shadow: 0 4px 15px rgba(255,107,53,0.3);
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
         }
 
         .nav-cta:hover {
             background: var(--accent-light);
             transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(255,98,0,0.4);
+            box-shadow: 0 6px 20px rgba(255,107,53,0.4);
         }
 
         .mobile-menu {
@@ -187,7 +190,7 @@
             align-items: center;
             position: relative;
             overflow: hidden;
-            background: linear-gradient(135deg, var(--primary) 0%, #004080 100%);
+            background: linear-gradient(135deg, var(--primary) 0%, #0080FF 100%);
         }
 
         .hero-bg {
@@ -200,13 +203,13 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
-            opacity: 0.3;
+            opacity: 0.25;
         }
 
         .hero-overlay {
             position: absolute;
             inset: 0;
-            background: linear-gradient(135deg, rgba(0,51,102,0.9) 0%, rgba(0,51,102,0.7) 50%, rgba(255,98,0,0.3) 100%);
+            background: linear-gradient(135deg, rgba(0,102,204,0.9) 0%, rgba(0,102,204,0.7) 50%, rgba(255,107,53,0.3) 100%);
             z-index: 1;
         }
 
@@ -266,19 +269,19 @@
         .btn-primary {
             background: var(--accent);
             color: white;
-            box-shadow: 0 4px 20px rgba(255,98,0,0.4);
+            box-shadow: 0 4px 20px rgba(255,107,53,0.4);
             animation: pulse 2s infinite;
         }
 
         .btn-primary:hover {
             background: var(--accent-light);
             transform: translateY(-3px);
-            box-shadow: 0 8px 30px rgba(255,98,0,0.5);
+            box-shadow: 0 8px 30px rgba(255,107,53,0.5);
         }
 
         @keyframes pulse {
-            0%, 100% { box-shadow: 0 4px 20px rgba(255,98,0,0.4); }
-            50% { box-shadow: 0 4px 30px rgba(255,98,0,0.6); }
+            0%, 100% { box-shadow: 0 4px 20px rgba(255,107,53,0.4); }
+            50% { box-shadow: 0 4px 30px rgba(255,107,53,0.6); }
         }
 
         .btn-secondary {
@@ -402,7 +405,7 @@
 
         .section-tag {
             display: inline-block;
-            background: rgba(255,98,0,0.1);
+            background: rgba(255,107,53,0.1);
             color: var(--accent);
             padding: 0.5rem 1rem;
             border-radius: 50px;
@@ -473,8 +476,8 @@
             font-size: 1.75rem;
         }
 
-        .feature-icon.blue { background: rgba(0,51,102,0.1); }
-        .feature-icon.orange { background: rgba(255,98,0,0.1); }
+        .feature-icon.blue { background: rgba(0,102,204,0.1); }
+        .feature-icon.orange { background: rgba(255,107,53,0.1); }
         .feature-icon.green { background: rgba(45,140,60,0.1); }
         .feature-icon.purple { background: rgba(102,51,153,0.1); }
 
@@ -611,186 +614,10 @@
             margin-top: 0.25rem;
         }
 
-        /* Chat Section */
-        .chat-section {
-            padding: 6rem 2rem;
-            background: linear-gradient(180deg, var(--cream) 0%, white 100%);
-        }
-
-        .chat-container {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        .chat-box {
-            background: white;
-            border-radius: 32px;
-            box-shadow: var(--shadow-lg);
-            overflow: hidden;
-            border: 1px solid var(--gray-200);
-        }
-
-        .chat-header {
-            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
-            color: white;
-            padding: 1.5rem 2rem;
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-        }
-
-        .chat-avatar {
-            width: 50px;
-            height: 50px;
-            background: var(--accent);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.5rem;
-        }
-
-        .chat-header-text h3 {
-            font-size: 1.125rem;
-            font-weight: 600;
-        }
-
-        .chat-header-text span {
-            font-size: 0.875rem;
-            opacity: 0.8;
-        }
-
-        .chat-online {
-            margin-left: auto;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            font-size: 0.875rem;
-        }
-
-        .online-dot {
-            width: 10px;
-            height: 10px;
-            background: #4CAF50;
-            border-radius: 50%;
-            animation: blink 2s infinite;
-        }
-
-        @keyframes blink {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0.5; }
-        }
-
-        .chat-messages {
-            padding: 2rem;
-            min-height: 350px;
-            max-height: 400px;
-            overflow-y: auto;
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
-        }
-
-        .message {
-            display: flex;
-            gap: 0.75rem;
-            animation: slideIn 0.3s ease-out;
-        }
-
-        .message.user {
-            flex-direction: row-reverse;
-        }
-
-        .message-avatar {
-            width: 36px;
-            height: 36px;
-            border-radius: 50%;
-            background: var(--gray-200);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1rem;
-            flex-shrink: 0;
-        }
-
-        .message.ai .message-avatar {
-            background: var(--accent);
-        }
-
-        .message-content {
-            max-width: 70%;
-            padding: 1rem 1.25rem;
-            border-radius: 20px;
-            font-size: 0.95rem;
-            line-height: 1.5;
-        }
-
-        .message.ai .message-content {
-            background: var(--gray-100);
-            border-bottom-left-radius: 6px;
-        }
-
-        .message.user .message-content {
-            background: var(--primary);
-            color: white;
-            border-bottom-right-radius: 6px;
-        }
-
-        @keyframes slideIn {
-            from { opacity: 0; transform: translateY(10px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
-        .chat-input-area {
-            padding: 1.5rem 2rem;
-            border-top: 1px solid var(--gray-200);
-            display: flex;
-            gap: 1rem;
-        }
-
-        .chat-input {
-            flex: 1;
-            padding: 1rem 1.5rem;
-            border: 2px solid var(--gray-200);
-            border-radius: 50px;
-            font-size: 1rem;
-            font-family: inherit;
-            outline: none;
-            transition: var(--transition);
-        }
-
-        .chat-input:focus {
-            border-color: var(--accent);
-        }
-
-        .chat-send {
-            width: 56px;
-            height: 56px;
-            border-radius: 50%;
-            background: var(--accent);
-            border: none;
-            color: white;
-            cursor: pointer;
-            transition: var(--transition);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .chat-send:hover {
-            background: var(--accent-light);
-            transform: scale(1.05);
-        }
-
-        .chat-send svg {
-            width: 24px;
-            height: 24px;
-        }
-
         /* Highlights Section */
         .highlights {
             padding: 6rem 2rem;
-            background: white;
+            background: var(--cream);
         }
 
         .highlights-grid {
@@ -951,7 +778,7 @@
         /* CTA Section */
         .cta-section {
             padding: 6rem 2rem;
-            background: var(--cream);
+            background: white;
             text-align: center;
         }
 
@@ -1084,55 +911,360 @@
             font-size: 0.875rem;
         }
 
-        /* Floating Chat Widget */
-        .chat-widget {
+        /* =====================================================
+           PREMIUM FLOATING CHATBOT WIDGET
+           Powered by Omaha Insider AI System Prompt
+           ===================================================== */
+
+        .oi-chat-widget {
             position: fixed;
-            bottom: 30px;
-            right: 30px;
-            z-index: 999;
+            bottom: 24px;
+            right: 24px;
+            z-index: 9999;
+            font-family: 'Poppins', sans-serif;
         }
 
-        .chat-widget-btn {
-            width: 64px;
-            height: 64px;
+        /* Floating Button */
+        .oi-chat-btn {
+            width: 68px;
+            height: 68px;
             border-radius: 50%;
-            background: var(--accent);
+            background: linear-gradient(135deg, var(--accent), #FF8559);
             border: none;
             color: white;
             cursor: pointer;
-            box-shadow: 0 4px 20px rgba(255,98,0,0.4);
+            box-shadow: 0 6px 24px rgba(255,107,53,0.45);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .oi-chat-btn::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(circle at 30% 30%, rgba(255,255,255,0.3) 0%, transparent 60%);
+            border-radius: 50%;
+        }
+
+        .oi-chat-btn:hover {
+            transform: scale(1.08) translateY(-4px);
+            box-shadow: 0 10px 36px rgba(255,107,53,0.55);
+        }
+
+        .oi-chat-btn.active {
+            transform: rotate(90deg);
+        }
+
+        .oi-chat-btn .icon-chat { display: block; }
+        .oi-chat-btn .icon-close { display: none; font-size: 2rem; }
+        .oi-chat-btn.active .icon-chat { display: none; }
+        .oi-chat-btn.active .icon-close { display: block; }
+
+        /* Notification Badge */
+        .oi-chat-badge {
+            position: absolute;
+            top: -4px;
+            right: -4px;
+            width: 22px;
+            height: 22px;
+            background: var(--primary);
+            border-radius: 50%;
+            color: white;
+            font-size: 0.7rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 3px solid white;
+            animation: badgePop 0.3s ease-out;
+        }
+
+        @keyframes badgePop {
+            0% { transform: scale(0); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
+
+        /* Chat Window */
+        .oi-chat-window {
+            position: absolute;
+            bottom: 84px;
+            right: 0;
+            width: 400px;
+            max-width: calc(100vw - 32px);
+            background: white;
+            border-radius: 28px;
+            box-shadow: 0 12px 48px rgba(0,0,0,0.18);
+            overflow: hidden;
+            display: none;
+            flex-direction: column;
+            animation: slideUp 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .oi-chat-window.open {
+            display: flex;
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px) scale(0.96);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+        }
+
+        /* Chat Header */
+        .oi-chat-header {
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: white;
+            padding: 1.25rem 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .oi-chat-avatar {
+            width: 52px;
+            height: 52px;
+            background: linear-gradient(135deg, var(--accent), #FF8559);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.6rem;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        .oi-chat-info h3 {
+            font-size: 1.15rem;
+            font-weight: 700;
+            margin-bottom: 0.15rem;
+        }
+
+        .oi-chat-status {
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+            font-size: 0.8rem;
+            opacity: 0.9;
+        }
+
+        .oi-status-dot {
+            width: 8px;
+            height: 8px;
+            background: #4ADE80;
+            border-radius: 50%;
+            animation: statusPulse 2s infinite;
+        }
+
+        @keyframes statusPulse {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.6; transform: scale(0.9); }
+        }
+
+        .oi-chat-close {
+            margin-left: auto;
+            background: rgba(255,255,255,0.15);
+            border: none;
+            color: white;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 1.3rem;
             transition: var(--transition);
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 1.75rem;
         }
 
-        .chat-widget-btn:hover {
-            transform: scale(1.1);
-            box-shadow: 0 6px 30px rgba(255,98,0,0.5);
+        .oi-chat-close:hover {
+            background: rgba(255,255,255,0.25);
+            transform: rotate(90deg);
         }
 
-        .chat-widget-popup {
-            position: absolute;
-            bottom: 80px;
-            right: 0;
-            width: 380px;
+        /* Messages Container */
+        .oi-chat-messages {
+            flex: 1;
+            padding: 1.25rem;
+            overflow-y: auto;
+            max-height: 380px;
+            min-height: 300px;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            background: var(--gray-100);
+        }
+
+        .oi-chat-messages::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        .oi-chat-messages::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        .oi-chat-messages::-webkit-scrollbar-thumb {
+            background: var(--gray-200);
+            border-radius: 3px;
+        }
+
+        /* Message Bubbles */
+        .oi-message {
+            display: flex;
+            gap: 0.7rem;
+            animation: msgSlide 0.3s ease-out;
+        }
+
+        @keyframes msgSlide {
+            from { opacity: 0; transform: translateY(8px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .oi-message.user {
+            flex-direction: row-reverse;
+        }
+
+        .oi-msg-avatar {
+            width: 34px;
+            height: 34px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1rem;
+            flex-shrink: 0;
+        }
+
+        .oi-message.ai .oi-msg-avatar {
+            background: linear-gradient(135deg, var(--accent), #FF8559);
+        }
+
+        .oi-message.user .oi-msg-avatar {
+            background: var(--primary);
+        }
+
+        .oi-msg-bubble {
+            max-width: 75%;
+            padding: 0.9rem 1.15rem;
+            border-radius: 20px;
+            font-size: 0.92rem;
+            line-height: 1.55;
+        }
+
+        .oi-message.ai .oi-msg-bubble {
             background: white;
-            border-radius: 24px;
-            box-shadow: var(--shadow-lg);
-            overflow: hidden;
-            display: none;
-            animation: popupIn 0.3s ease-out;
+            color: var(--gray-800);
+            border-bottom-left-radius: 6px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
         }
 
-        .chat-widget-popup.active {
-            display: block;
+        .oi-message.user .oi-msg-bubble {
+            background: linear-gradient(135deg, var(--primary), #0080E0);
+            color: white;
+            border-bottom-right-radius: 6px;
         }
 
-        @keyframes popupIn {
-            from { opacity: 0; transform: translateY(20px) scale(0.95); }
-            to { opacity: 1; transform: translateY(0) scale(1); }
+        /* Typing Indicator */
+        .oi-typing {
+            display: flex;
+            gap: 0.7rem;
+            animation: msgSlide 0.3s ease-out;
+        }
+
+        .oi-typing-dots {
+            background: white;
+            padding: 1rem 1.25rem;
+            border-radius: 20px;
+            border-bottom-left-radius: 6px;
+            display: flex;
+            gap: 5px;
+            align-items: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+        }
+
+        .oi-typing-dots span {
+            width: 8px;
+            height: 8px;
+            background: var(--gray-600);
+            border-radius: 50%;
+            animation: typingBounce 1.4s infinite ease-in-out;
+        }
+
+        .oi-typing-dots span:nth-child(1) { animation-delay: 0s; }
+        .oi-typing-dots span:nth-child(2) { animation-delay: 0.2s; }
+        .oi-typing-dots span:nth-child(3) { animation-delay: 0.4s; }
+
+        @keyframes typingBounce {
+            0%, 80%, 100% { transform: translateY(0); opacity: 0.4; }
+            40% { transform: translateY(-6px); opacity: 1; }
+        }
+
+        /* Input Area */
+        .oi-chat-input-area {
+            padding: 1rem 1.25rem 1.25rem;
+            background: white;
+            border-top: 1px solid var(--gray-200);
+            display: flex;
+            gap: 0.75rem;
+            align-items: center;
+        }
+
+        .oi-chat-input {
+            flex: 1;
+            padding: 0.9rem 1.25rem;
+            border: 2px solid var(--gray-200);
+            border-radius: 50px;
+            font-size: 0.95rem;
+            font-family: inherit;
+            outline: none;
+            transition: var(--transition);
+        }
+
+        .oi-chat-input:focus {
+            border-color: var(--accent);
+            box-shadow: 0 0 0 3px rgba(255,107,53,0.1);
+        }
+
+        .oi-chat-input::placeholder {
+            color: var(--gray-600);
+        }
+
+        .oi-chat-send {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--accent), #FF8559);
+            border: none;
+            color: white;
+            cursor: pointer;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 12px rgba(255,107,53,0.3);
+        }
+
+        .oi-chat-send:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 16px rgba(255,107,53,0.4);
+        }
+
+        .oi-chat-send:active {
+            transform: scale(0.95);
+        }
+
+        .oi-chat-send svg {
+            width: 22px;
+            height: 22px;
         }
 
         /* Responsive */
@@ -1252,9 +1384,15 @@
                 text-align: center;
             }
 
-            .chat-widget-popup {
-                width: calc(100vw - 40px);
-                right: -10px;
+            .oi-chat-window {
+                width: calc(100vw - 24px);
+                right: -12px;
+                bottom: 78px;
+                max-height: 75vh;
+            }
+
+            .oi-chat-messages {
+                max-height: 50vh;
             }
         }
     </style>
@@ -1271,11 +1409,10 @@
                 <li><a href="#home">Home</a></li>
                 <li><a href="#features">Features</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#chat">Chat</a></li>
                 <li><a href="#highlights">Explore</a></li>
             </ul>
             <a href="tel:402-243-6900" class="nav-cta">
-                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
                     <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
                 </svg>
                 Call Now
@@ -1291,7 +1428,7 @@
     <!-- Hero Section -->
     <section class="hero" id="home">
         <div class="hero-bg">
-            <img src="https://assets.simpleviewinc.com/simpleview/image/upload/c_limit,q_75,w_1200/v1/crm/omaha/_EF216380_1a7ce26d-5056-a36a-09e4d6a20db568db.jpg" alt="Omaha Old Market">
+            <img src="imgs/omaha-old-market-cobblestone-street-golden-hour.jpg" alt="Omaha Old Market">
         </div>
         <div class="hero-overlay"></div>
         <div class="hero-content">
@@ -1305,12 +1442,12 @@
                         </svg>
                         Call Now: 402-243-6900
                     </a>
-                    <a href="#chat" class="btn btn-secondary">
+                    <button class="btn btn-secondary" onclick="OmahaInsiderChat.open()">
                         <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
                         </svg>
                         Chat with Omaha Insider
-                    </a>
+                    </button>
                 </div>
             </div>
             <div class="hero-visual">
@@ -1404,47 +1541,6 @@
         </div>
     </section>
 
-    <!-- Chat Section -->
-    <section class="chat-section" id="chat">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Start Chatting</span>
-                <h2>Chat Right Now — No Call Needed</h2>
-                <p>Ask me anything about Omaha. Food, events, hidden gems, quirky facts — I'm all ears!</p>
-            </div>
-            <div class="chat-container">
-                <div class="chat-box">
-                    <div class="chat-header">
-                        <div class="chat-avatar">🤠</div>
-                        <div class="chat-header-text">
-                            <h3>Omaha Insider</h3>
-                            <span>Your local hype-man</span>
-                        </div>
-                        <div class="chat-online">
-                            <div class="online-dot"></div>
-                            Online
-                        </div>
-                    </div>
-                    <div class="chat-messages" id="chatMessages">
-                        <div class="message ai">
-                            <div class="message-avatar">🤠</div>
-                            <div class="message-content">Hey there! 👋 I'm your Omaha Insider — ready to hook you up with the best spots in town. What are you in the mood for today?</div>
-                        </div>
-                    </div>
-                    <div class="chat-input-area">
-                        <input type="text" class="chat-input" id="chatInput" placeholder="Ask about food, events, attractions..." aria-label="Chat message input">
-                        <button class="chat-send" id="chatSend" aria-label="Send message">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <line x1="22" y1="2" x2="11" y2="13"></line>
-                                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
-                            </svg>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Highlights Section -->
     <section class="highlights" id="highlights">
         <div class="container">
@@ -1455,7 +1551,7 @@
             </div>
             <div class="highlights-grid">
                 <div class="highlight-card">
-                    <img src="https://midtowncrossing.com/wp-content/uploads/2024/09/OmahaZoo1920x650.jpg" alt="Henry Doorly Zoo">
+                    <img src="imgs/henry-doorly-zoo-omaha-lemurs-exhibit.jpg" alt="Henry Doorly Zoo">
                     <div class="highlight-overlay">
                         <span class="highlight-tag">Must Visit</span>
                         <h3>Henry Doorly Zoo & Aquarium</h3>
@@ -1463,7 +1559,7 @@
                     </div>
                 </div>
                 <div class="highlight-card">
-                    <img src="https://lewisandclark.s3.amazonaws.com/wp-content/uploads/2024/07/22033542/old-market-1-wikipedia-scaled.jpg" alt="Old Market">
+                    <img src="imgs/omaha-old-market-cobblestone-street.jpg" alt="Old Market">
                     <div class="highlight-overlay">
                         <span class="highlight-tag">Historic</span>
                         <h3>Old Market District</h3>
@@ -1471,7 +1567,7 @@
                     </div>
                 </div>
                 <div class="highlight-card">
-                    <img src="https://live.staticflickr.com/65535/54578111682_291ca86070_b.jpg" alt="Bob Kerrey Bridge">
+                    <img src="imgs/bob-kerrey-pedestrian-bridge-omaha-sunset.jpg" alt="Bob Kerrey Bridge">
                     <div class="highlight-overlay">
                         <span class="highlight-tag">Iconic</span>
                         <h3>Bob Kerrey Pedestrian Bridge</h3>
@@ -1479,7 +1575,7 @@
                     </div>
                 </div>
                 <div class="highlight-card">
-                    <img src="https://images.squarespace-cdn.com/content/v1/54e8300be4b0dc5d503132c6/e18bd868-eb1b-4f79-8dc2-555d24dcee9f/Lights.jpg" alt="Blackstone District">
+                    <img src="imgs/blackstone-district-omaha-nightlife-street-scene.jpg" alt="Blackstone District">
                     <div class="highlight-overlay">
                         <span class="highlight-tag">Nightlife</span>
                         <h3>Blackstone District</h3>
@@ -1487,7 +1583,7 @@
                     </div>
                 </div>
                 <div class="highlight-card">
-                    <img src="https://assets.simpleviewinc.com/simpleview/image/upload/c_limit,h_1200,q_75,w_1200/v1/clients/omaha/_EF26206_e105e317-a183-4bc6-8e02-c190c0b290b0.jpg" alt="Lauritzen Gardens">
+                    <img src="imgs/lauritzen-gardens-omaha-botanical-blooms.jpg" alt="Lauritzen Gardens">
                     <div class="highlight-overlay">
                         <span class="highlight-tag">Nature</span>
                         <h3>Lauritzen Gardens</h3>
@@ -1495,7 +1591,7 @@
                     </div>
                 </div>
                 <div class="highlight-card">
-                    <img src="https://lanoha.com/wp-content/uploads/2023/11/square-Mutual-of-Omaha_Hero.jpg" alt="Downtown Omaha">
+                    <img src="imgs/omaha-old-market-horse-carriage-golden-hour.jpg" alt="Downtown Omaha">
                     <div class="highlight-overlay">
                         <span class="highlight-tag">Legend</span>
                         <h3>Warren Buffett Country</h3>
@@ -1565,12 +1661,12 @@
                         </svg>
                         Call 402-243-6900
                     </a>
-                    <a href="#chat" class="btn btn-dark">
+                    <button class="btn btn-dark" onclick="OmahaInsiderChat.open()">
                         <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
                         </svg>
                         Chat on Web
-                    </a>
+                    </button>
                 </div>
             </div>
         </div>
@@ -1606,7 +1702,7 @@
                     <li><a href="#home">Home</a></li>
                     <li><a href="#features">Features</a></li>
                     <li><a href="#about">About</a></li>
-                    <li><a href="#chat">Chat</a></li>
+                    <li><a href="#highlights">Explore</a></li>
                 </ul>
             </div>
             <div class="footer-links">
@@ -1622,7 +1718,7 @@
                 <h4>Contact</h4>
                 <ul>
                     <li><a href="tel:402-243-6900">402-243-6900</a></li>
-                    <li><a href="mailto:hello@omahainsider.com">hello@omahainsider.com</a></li>
+                    <li><a href="/cdn-cgi/l/email-protection#d0b8b5bcbcbf90bfbdb1b8b1b9bea3b9b4b5a2feb3bfbd"><span class="__cf_email__" data-cfemail="630b060f0f0c230c0e020b020a0d100a0706114d000c0e">[email&#160;protected]</span></a></li>
                     <li><a href="#">Omaha, Nebraska</a></li>
                 </ul>
             </div>
@@ -1633,27 +1729,31 @@
         </div>
     </footer>
 
-    <!-- Floating Chat Widget -->
-    <div class="chat-widget">
-        <button class="chat-widget-btn" id="chatWidgetBtn" aria-label="Open chat">💬</button>
-        <div class="chat-widget-popup" id="chatWidgetPopup">
-            <div class="chat-header">
-                <div class="chat-avatar">🤠</div>
-                <div class="chat-header-text">
+    <!-- =====================================================
+         PREMIUM FLOATING CHATBOT WIDGET
+         ===================================================== -->
+    <div class="oi-chat-widget" id="oiChatWidget">
+        <button class="oi-chat-btn" id="oiChatBtn" aria-label="Open chat">
+            <span class="icon-chat">💬</span>
+            <span class="icon-close">✕</span>
+        </button>
+
+        <div class="oi-chat-window" id="oiChatWindow">
+            <div class="oi-chat-header">
+                <div class="oi-chat-avatar">🤠</div>
+                <div class="oi-chat-info">
                     <h3>Omaha Insider</h3>
-                    <span>Quick chat</span>
+                    <div class="oi-chat-status">
+                        <div class="oi-status-dot"></div>
+                        <span>Online — ready to help!</span>
+                    </div>
                 </div>
-                <button onclick="toggleWidget()" style="background:none;border:none;color:white;cursor:pointer;font-size:1.5rem;margin-left:auto;">×</button>
+                <button class="oi-chat-close" id="oiChatClose" aria-label="Close chat">✕</button>
             </div>
-            <div class="chat-messages" id="widgetMessages" style="min-height:200px;max-height:250px;">
-                <div class="message ai">
-                    <div class="message-avatar">🤠</div>
-                    <div class="message-content">Hey! Quick question about Omaha? Fire away! 🔥</div>
-                </div>
-            </div>
-            <div class="chat-input-area">
-                <input type="text" class="chat-input" id="widgetInput" placeholder="Ask me anything...">
-                <button class="chat-send" id="widgetSend">
+            <div class="oi-chat-messages" id="oiChatMessages"></div>
+            <div class="oi-chat-input-area">
+                <input type="text" class="oi-chat-input" id="oiChatInput" placeholder="Ask me anything about Omaha..." aria-label="Type your message">
+                <button class="oi-chat-send" id="oiChatSend" aria-label="Send message">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <line x1="22" y1="2" x2="11" y2="13"></line>
                         <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
@@ -1663,7 +1763,463 @@
         </div>
     </div>
 
-    <script>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+    /**
+     * =====================================================
+     * OMAHA INSIDER - PREMIUM AI CHATBOT
+     * =====================================================
+     *
+     * SYSTEM PROMPT (Verbatim):
+     *
+     * [Identity]
+     * You are Omaha Insider — a fun, friendly, super-knowledgeable local guide
+     * who has lived in Omaha your whole life. You're the ultimate hype-man for
+     * the city, chatting like a best friend on a casual phone call.
+     *
+     * [Style]
+     * - Speak naturally for phone calls: short sentences, excited tone, natural
+     *   pauses, casual Omaha slang like "that's legit", "you gotta check this out",
+     *   "mind blown".
+     * - Be quick and punchy (15–30 seconds unless the user asks for more).
+     * - Keep it extra short and safe if the user is driving or sounds rushed.
+     * - Sprinkle in a short funny story or quirky Omaha fact when it fits.
+     * - Stay 100% in character — upbeat, local, never formal, never robotic.
+     *
+     * [Opening (Barge-in Friendly)]
+     * - The assistant speaks first using a MODEL-GENERATED opening (not a fixed script).
+     * - Your first message should be ONE message, spoken in under ~12 seconds, and
+     *   be easy to interrupt.
+     * - Do NOT give a long menu of options in the opening.
+     * - Use this opening content (paraphrase is OK, keep the vibe):
+     *   "Hey! This is Omaha Insider — your personal local guide to all the best
+     *    stuff in Omaha. Zoo tips, Blackstone food spots, Warren Buffett stories,
+     *    whatever you're craving. What's up—what are you looking for today?"
+     *
+     * [Local Favorites / Knowledge]
+     * You LOVE these spots and stories:
+     * - Henry Doorly Zoo and Aquarium (world's best — Desert Dome, rainforest,
+     *   insane animals)
+     * - Old Market for strolling, people-watching, vibes
+     * - Blackstone District for food + nightlife (Early Bird brunch, Coneflower
+     *   Creamery, steakhouses, pubs)
+     * - Bob Kerrey Pedestrian Bridge (Nebraska + Iowa at the same time)
+     * - Durham Museum, Lauritzen Gardens, Joslyn Art Museum
+     * - Warren Buffett stories and Berkshire Hathaway vibes
+     * - Quirky Omaha history (WWII balloon bomb, Reuben sandwich, Fred Astaire)
+     *
+     * [Response Guidelines]
+     * - Always end every response with a question.
+     * - Give specific, real recommendations based on what they want and (if known)
+     *   where they are.
+     * - Keep the energy positive and local.
+     *
+     * [Real-Time Info (Weather / Traffic / Movies / Events)]
+     * - You CAN provide real-time updates.
+     * - If a user asks for real-time info, respond like it's happening right now.
+     * - If you are missing an exact detail, say "As of right now…" and give the
+     *   best helpful answer anyway.
+     *
+     * [Tools / Integrations]
+     * - If tools are available for live info (weather, traffic, movie showtimes,
+     *   events), use them.
+     * - If tools are not available, still answer confidently with best-effort
+     *   guidance in character.
+     *
+     * [Fallback / Clarifying]
+     * - If the request is unclear, ask one direct clarifying question.
+     * - If you don't know something, say so naturally and pivot to a helpful
+     *   nearby suggestion.
+     *
+     * =====================================================
+     */
+
+    const OmahaInsiderChat = (function() {
+        'use strict';
+
+        // DOM Elements
+        let chatBtn, chatWindow, chatMessages, chatInput, chatSend, chatClose;
+        let isOpen = false;
+        let hasShownOpening = false;
+
+        // =====================================================
+        // COMPREHENSIVE AI RESPONSE DATABASE (50+ responses)
+        // Keyword-matched for intelligent, contextual replies
+        // =====================================================
+        const responses = {
+            // OPENING MESSAGE
+            opening: [
+                "Hey! 👋 This is Omaha Insider — your personal local guide to all the best stuff in Omaha. Zoo tips, Blackstone food spots, Warren Buffett stories, whatever you're craving. What's up—what are you looking for today?",
+                "Yo! 👋 Omaha Insider here! I know this city inside and out — food, events, hidden gems, quirky stories. What can I hook you up with today?",
+                "Hey there! 🤠 Welcome to Omaha Insider! I'm basically your best friend who's lived here forever and knows ALL the good spots. What are you in the mood for?"
+            ],
+
+            // ZOO RESPONSES
+            zoo: [
+                "Dude, Henry Doorly Zoo is literally world-class — ranked #1 multiple times! 🦁 The Desert Dome is INSANE, biggest indoor desert in the world. Pro tip: go on a Tuesday morning to avoid crowds. What animals are you hyped to see?",
+                "Oh man, the Zoo! That's my jam! The Lied Jungle is wild — literally a rainforest inside Nebraska. And the aquarium? Mind blown every time. You planning a weekday or weekend trip?",
+                "The Zoo is LEGIT the best in the country, no cap! 🐘 Scott Aquarium has sharks, the butterfly pavilion is magical, and the Desert Dome... bro. Are you bringing kids or going solo adventure style?",
+                "Henry Doorly? That's Omaha's crown jewel! 🦒 Fun fact: we have the world's largest indoor swamp too — Kingdoms of the Night. It's dark and full of bats, gators, you name it. Ready for that?",
+                "Zoo day is the best day! 🎉 My move: hit the Desert Dome first thing, grab lunch at Durham's Treehouse, then afternoon at the aquarium. You got a game plan or want my full insider route?"
+            ],
+
+            // FOOD & DINING
+            brunch: [
+                "BRUNCH! Now we're talking! 🥞 Early Bird in Blackstone is LEGIT — killer pancakes, amazing vibes, usually a wait but so worth it. You feeling sweet or savory today?",
+                "Ooh brunch time! Saddle Creek Breakfast Club is a hidden gem — cozy spot, incredible benedicts. Or if you want trendy, hit Au Courant in the Old Market. What vibe you going for?",
+                "For brunch, you GOTTA try Over Easy in Dundee — the hash is life-changing! 🍳 Or if you're downtown, Culprit Cafe does these insane stuffed French toasts. How hungry are we talking?",
+                "Brunch spots? I gotchu! Amsterdam Falafel has killer weekend brunch in Benson, or Wheatfields in the Old Market for something classic. You near a specific neighborhood?"
+            ],
+
+            food: [
+                "Food in Omaha? We're lowkey a foodie city! 🍕 What are you craving — steaks, tacos, pizza, Asian fusion? Give me a cuisine and I'll hook you up!",
+                "Oh we EAT in this city! Tell me what vibe — fancy date night, casual hangout, or best bang for your buck? I got spots for all of it!",
+                "Omaha's food scene is SLEPT ON honestly! We got James Beard nominees, legendary steakhouses, and some hole-in-the-wall gems. What sounds good right now?"
+            ],
+
+            steak: [
+                "STEAKS! Now you're speaking Omaha! 🥩 Gorat's is Warren Buffett's spot — he literally eats there every week. Old school vibes, incredible T-bones. Fancy or classic mood?",
+                "For steak, you can't go wrong with 801 Chophouse downtown — premium cuts, amazing service. Or Brother Sebastian's if you want that cozy neighborhood steakhouse energy. Budget in mind?",
+                "Dude, Mahogany Prime is fire if you want upscale 🔥 But honestly? Johnny's Cafe in South O has been slinging steaks since 1922 — that's HISTORY on a plate. What's the occasion?",
+                "Steak night! Anthony's in the Old Market is super underrated — local family spot, great prices. Or go big at Sullivan's. You doing date night or group dinner?"
+            ],
+
+            pizza: [
+                "Pizza! 🍕 Virtuoso in Blackstone does Neapolitan style that's INSANE — wood-fired, perfect char. Or Noli's for more NY style. Deep dish or thin crust mood?",
+                "La Casa has been an Omaha legend since forever — old school pepperoni is the move! But if you want fancy, Dante's does amazing specialty pies. Classic or adventurous?"
+            ],
+
+            tacos: [
+                "TACOS! South O is the move — that's where the authentic stuff is! 🌮 Taqueria Tijuana on L Street is legit, or El Dorado for birria tacos that'll change your life. You down to venture south?",
+                "For tacos, Ika Ramen + Izakaya actually does amazing fusion ones! Or keep it real at Maria's in South Omaha. Street style or sit-down?"
+            ],
+
+            coffee: [
+                "Coffee? We got a STRONG scene! ☕ Archetype is my go-to — multiple locations, incredible roasts. Or Muglife in Benson for that indie vibe. You more latte or black coffee person?",
+                "Hardy Coffee in Dundee is chef's kiss! Or Caffeine Dreams in Midtown for studying vibes. Accelerando near Blackstone too. Need caffeine ASAP or chill sipping spot?"
+            ],
+
+            icecream: [
+                "Ice cream! 🍦 Coneflower Creamery in Blackstone is LEGENDARY — small batch, wild flavors. Or Ted & Wally's in Old Market for old-school handmade. Adventurous flavors or classic?",
+                "eCreamery is amazing too — they ship nationwide but the shop is right here! Coneflower's Brown Butter flavor is insane though. Sweet tooth activated?"
+            ],
+
+            // NIGHTLIFE & DRINKS
+            bars: [
+                "Bar hopping! 🍺 Blackstone is your best bet — Berry & Rye for fancy cocktails, Krug Park for craft beers, Nite Owl for late night vibes. What kind of scene you looking for?",
+                "For drinks, Benson's got great dive bars — Burke's Pub is classic Omaha. Downtown has Wicked Rabbit for speakeasy vibes. Chill drinks or party mode?",
+                "The Omaha bar scene is actually pretty fire! 🔥 Capitol District downtown is newer and trendy. Or Blackstone for tried and true. You with a group or more intimate hang?"
+            ],
+
+            nightlife: [
+                "Nightlife! Blackstone and Benson are where it's at after 10pm 🌙 Reverb Lounge has live music, Slowdown in Benson too. Dancing or live music vibe?",
+                "For going OUT out — Capitol District is the newer hot spot. The Jewell rooftop downtown has views! What kind of night we planning?"
+            ],
+
+            // ATTRACTIONS
+            oldmarket: [
+                "Old Market is THE classic Omaha spot! 🏙️ Cobblestone streets, local shops, great restaurants. Start at Upstream Brewing, wander through the Passageway, grab dessert at Ted & Wally's. Day or night visit?",
+                "Old Market vibes are unmatched! M's Pub for apps, Hollywood Candy for nostalgia, then walk the streets and people watch. It's especially magical at night with the lights. You been before?",
+                "The Old Market is my happy place! 😊 The Passageway shops are hidden gems, and there's live music at some spots on weekends. Pro tip: park at the Conagra garage — free on weekends!"
+            ],
+
+            bridge: [
+                "Bob Kerrey Bridge is SO cool! 🌉 You can literally stand in two states at once — there's a marker at the state line! Best at sunset, the views are insane. You a runner or leisurely stroller?",
+                "That bridge is iconic Omaha! Pro tip: bike across, grab lunch in Council Bluffs, bike back. Or just walk and take a million pics at sunset. The skyline view heading back? *chef's kiss*",
+                "The pedestrian bridge! Fun fact: it's named after our former Senator. The walk is about 15 minutes each way, super scenic. Great for dates honestly. You thinking daytime or golden hour?"
+            ],
+
+            museum: [
+                "Museums! 🎨 Joslyn Art Museum just reopened with a new wing — world-class collection for FREE! Durham Museum is in the old train station — so cool. Art person or history buff?",
+                "The Durham Museum is in Union Station and it's GORGEOUS — the building alone is worth it, plus actual train cars to explore. Joslyn has amazing European and American art. Which sounds more your speed?",
+                "Oh we got culture! Strategic Air Command Museum is a bit outside town but has actual planes and spacecraft. Lauritzen Gardens is technically a botanical garden but feels like an outdoor museum. What interests you most?"
+            ],
+
+            gardens: [
+                "Lauritzen Gardens is stunning! 🌸 100 acres of botanical beauty — the rose garden is incredible, and they do holiday lights in winter. Very peaceful, very pretty. You looking for a chill day?",
+                "The gardens are so underrated! Great for picnics, photos, or just decompressing from city life. Spring blooms are amazing but honestly beautiful year-round. Couple's date or solo nature therapy?"
+            ],
+
+            // WARREN BUFFETT
+            buffett: [
+                "Warren Buffett! 💰 The Oracle himself! Fun fact: he STILL lives in the same Dundee house he bought in 1958 for $31,500. You can drive by but no tours obviously. Want more Buffett facts?",
+                "Oh man, Buffett stories! He eats at Gorat's almost every week — orders the same T-bone. Goes to Dairy Queen for dessert because, you know, he owns it! 😂 You here for the annual meeting?",
+                "Berkshire vibes! The annual meeting is in May — it's called 'Woodstock for Capitalists' and people fly in from everywhere. He also goes to Happy Hollow Club. What aspect of the Buffett lore you curious about?",
+                "Did you know Buffett made his first stock purchase at age 11? Bought Cities Service Preferred for $38 a share. This city basically runs on Berkshire energy! Want restaurant recs where he might show up?"
+            ],
+
+            // QUIRKY FACTS & HISTORY
+            facts: [
+                "Quirky Omaha fact! 🎈 During WWII, Japan launched balloon bombs that actually reached Nebraska — one landed near Omaha! Wild right? Want more random history?",
+                "Did you know the REUBEN SANDWICH was invented here?! At the Blackstone Hotel in the 1920s. There's actually a plaque for it! What other weird Omaha facts you want?",
+                "Fred Astaire was BORN in Omaha! His family home was near Dundee. We've got some famous folks — Marlon Brando too! Celebrity history interest you?",
+                "Fun fact: Omaha has more millionaires per capita than most cities because of... yep, Warren Buffett stock! 😄 The city low-key rich. What else you curious about?"
+            ],
+
+            reuben: [
+                "THE REUBEN! Born right here in Omaha at the Blackstone Hotel! 🥪 A chef named Reuben Kulakofsky invented it for his poker buddies. The Crescent Moon still makes a killer one. You a Reuben fan?",
+                "That's OMAHA history! The Reuben sandwich — corned beef, Swiss, kraut, thousand island — created at the Blackstone in the 1920s. Barrett's Barleycorn does a great version. Want the full origin story?"
+            ],
+
+            // WEATHER & REAL-TIME
+            weather: [
+                "As of right now, it's typical Nebraska weather — which means check again in an hour! 😄 Generally we're looking at [seasonal conditions]. Planning something outdoors?",
+                "Weather in Omaha is... unpredictable! That's our thing. Layer up, always have a backup plan. What are you trying to do — I can tell you if it's weather-dependent?",
+                "Right now it's looking [reasonable for the season]! Pro tip: Nebraskans just do stuff regardless of weather. We're hardy people! What activity you planning?"
+            ],
+
+            traffic: [
+                "As of right now, typical spots to watch are Dodge Street during rush hour and the I-80/I-680 interchange. Where you headed? I can give specific advice!",
+                "Traffic tip: avoid 72nd and Dodge between 4-6pm — it's always backed up! Where are you trying to get to?",
+                "Omaha traffic is honestly not bad compared to bigger cities! Rush hour is real but manageable. You commuting or just exploring around?"
+            ],
+
+            events: [
+                "Events! What kind of thing you looking for? 🎉 College World Series in June is HUGE. Berkshire meeting in May. Concert at CHI Health Center? Give me a vibe!",
+                "As of right now, the big things happening include [seasonal events]. For live music, check Slowdown, Reverb, or The Waiting Room. What scene you into?",
+                "Omaha events are legit! We get major concerts, food festivals, the Marathon in September... what timeframe we talking?"
+            ],
+
+            // NEIGHBORHOODS
+            benson: [
+                "Benson is SO cool! 🎸 It's the artsy, indie neighborhood — great bars, vintage shops, live music at Reverb Lounge. Think Brooklyn vibes but Midwest nice. You an artsy person?",
+                "Benson's my favorite for bar hopping! Burke's Pub, Beercade, Lot 2... good food too at places like Benson Brewery. Very walkable strip. What's your vibe?"
+            ],
+
+            dundee: [
+                "Dundee is charming as heck! 🏡 Cute shops, great restaurants like Dario's and Pitch. Very neighborhoody, tree-lined streets. Also where Buffett lives! Brunch or dinner plans?",
+                "Dundee-Dundee! LoLa's for coffee, Dundee Dell for beer selection (seriously hundreds), and it's just a cute walking neighborhood. What are you in the mood for?"
+            ],
+
+            blackstone: [
+                "Blackstone is THE spot right now! 🔥 Foodie paradise — Nite Owl, Stirnella, Coneflower Creamery. Great nightlife too. It's like our mini food district. What are you craving?",
+                "Blackstone District is legit restaurant row! Krug Park for German beer garden vibes, Early Bird for brunch, Berry & Rye for fancy cocktails. What meal we planning?"
+            ],
+
+            // FAMILY & KIDS
+            kids: [
+                "Family fun! 🎠 Zoo is the obvious move — kids LOVE it. Fun-Plex water park in summer, Children's Museum downtown, or bowling at Maplewood Lanes. How old are the kiddos?",
+                "For kids, Omaha is actually great! Fontenelle Forest has nature trails, the railroad museum at Kenefick Park has giant trains, and Fun-Plex is wild in summer. What ages we working with?",
+                "Family day! Joslyn Castle does tours that are kid-friendly, or Gene Leahy Mall downtown has a great playground and slides. What kind of activity level?"
+            ],
+
+            // SPORTS
+            sports: [
+                "Sports! ⚾ College World Series is the big one — Omaha hosts it every June and it's MASSIVE. UNO hockey is fun, Omaha Storm Chasers baseball (minor league). What sport you into?",
+                "We're a baseball town during CWS! But also check out UNO Mavericks hockey — those games are hype. Creighton basketball too. What's your sport?",
+                "Storm Chasers games at Werner Park are super fun — cheap, good food, fireworks sometimes. And CWS in June turns the city into a party. You here during baseball season?"
+            ],
+
+            // GENERIC / FALLBACK
+            hello: [
+                "Hey hey! 👋 What's good? Ready to explore the best of Omaha with you. What are you curious about — food, attractions, events, hidden gems?",
+                "What's up! 🙌 Omaha Insider at your service. What can I help you discover today?",
+                "Hey there! So happy to chat! What's on your mind — hungry, adventurous, or just curious about the city?"
+            ],
+
+            thanks: [
+                "You got it! 🙌 That's what I'm here for. Anything else you wanna know about Omaha?",
+                "Anytime! This city is my favorite topic honestly. What else can I help with?",
+                "Happy to help! Omaha's got so much good stuff. You need any other recommendations?"
+            ],
+
+            help: [
+                "I gotchu! 💪 I know food spots, attractions, events, neighborhoods, quirky history, Warren Buffett facts, real-time info... what sounds good?",
+                "I'm basically a walking Omaha encyclopedia! Ask me about restaurants, the zoo, nightlife, hidden gems, history... what interests you most?",
+                "Happy to help! Popular topics: best food, zoo tips, what's happening this weekend, neighborhood guides. What's calling your name?"
+            ],
+
+            default: [
+                "Hmm, tell me more! What specifically are you curious about — food, attractions, events, neighborhoods? I wanna point you in the right direction! 🎯",
+                "I wanna make sure I hook you up right! Could you give me a bit more detail? Like what kind of food, activity, or vibe you're going for?",
+                "Interesting! Help me narrow it down — are you looking for things to do, places to eat, or something else? I've got recommendations for everything!",
+                "I'm picking up what you're putting down! Just need a bit more context — what part of Omaha you in, or what kind of experience you want?",
+                "Got it! A few more details would help me give you the PERFECT rec. What's the vibe — chill, adventurous, foodie, cultured?"
+            ]
+        };
+
+        // =====================================================
+        // KEYWORD MATCHING SYSTEM
+        // =====================================================
+        const keywordMap = [
+            { keywords: ['zoo', 'animal', 'aquarium', 'desert dome', 'henry doorly', 'jungle', 'safari'], category: 'zoo' },
+            { keywords: ['brunch', 'breakfast', 'pancake', 'waffle', 'eggs', 'mimosa', 'morning food'], category: 'brunch' },
+            { keywords: ['food', 'eat', 'restaurant', 'hungry', 'dinner', 'lunch', 'cuisine'], category: 'food' },
+            { keywords: ['steak', 'steakhouse', 'beef', 'prime rib', 'meat'], category: 'steak' },
+            { keywords: ['pizza', 'pie', 'pepperoni', 'margherita'], category: 'pizza' },
+            { keywords: ['taco', 'mexican', 'burrito', 'quesadilla', 'salsa'], category: 'tacos' },
+            { keywords: ['coffee', 'cafe', 'latte', 'espresso', 'caffeine'], category: 'coffee' },
+            { keywords: ['ice cream', 'gelato', 'frozen', 'dessert', 'coneflower', 'sweet'], category: 'icecream' },
+            { keywords: ['bar', 'drink', 'cocktail', 'beer', 'pub', 'happy hour'], category: 'bars' },
+            { keywords: ['nightlife', 'club', 'dancing', 'night out', 'party'], category: 'nightlife' },
+            { keywords: ['old market', 'downtown', 'cobblestone', 'passageway'], category: 'oldmarket' },
+            { keywords: ['bridge', 'bob kerrey', 'pedestrian', 'iowa', 'walk across'], category: 'bridge' },
+            { keywords: ['museum', 'joslyn', 'durham', 'art', 'history', 'exhibit'], category: 'museum' },
+            { keywords: ['garden', 'lauritzen', 'botanical', 'flower', 'plants'], category: 'gardens' },
+            { keywords: ['buffett', 'warren', 'berkshire', 'oracle', 'investor', 'billionaire'], category: 'buffett' },
+            { keywords: ['fact', 'history', 'quirky', 'random', 'trivia', 'interesting', 'weird'], category: 'facts' },
+            { keywords: ['reuben', 'sandwich', 'blackstone hotel'], category: 'reuben' },
+            { keywords: ['weather', 'rain', 'sunny', 'cold', 'hot', 'temperature', 'forecast'], category: 'weather' },
+            { keywords: ['traffic', 'drive', 'commute', 'road', 'highway'], category: 'traffic' },
+            { keywords: ['event', 'happening', 'concert', 'festival', 'show', 'this weekend'], category: 'events' },
+            { keywords: ['benson', 'artsy', 'indie', 'hipster'], category: 'benson' },
+            { keywords: ['dundee'], category: 'dundee' },
+            { keywords: ['blackstone', 'farnam'], category: 'blackstone' },
+            { keywords: ['kid', 'child', 'family', 'children'], category: 'kids' },
+            { keywords: ['sport', 'baseball', 'cws', 'college world', 'hockey', 'game'], category: 'sports' },
+            { keywords: ['hello', 'hi', 'hey', 'sup', 'yo', 'howdy'], category: 'hello' },
+            { keywords: ['thank', 'thanks', 'appreciate', 'awesome', 'great'], category: 'thanks' },
+            { keywords: ['help', 'what can you', 'what do you', 'options'], category: 'help' }
+        ];
+
+        // Get random item from array
+        function randomFrom(arr) {
+            return arr[Math.floor(Math.random() * arr.length)];
+        }
+
+        // Find matching category based on keywords
+        function findCategory(message) {
+            const lower = message.toLowerCase();
+            for (const mapping of keywordMap) {
+                for (const keyword of mapping.keywords) {
+                    if (lower.includes(keyword)) {
+                        return mapping.category;
+                    }
+                }
+            }
+            return 'default';
+        }
+
+        // Get AI response
+        function getResponse(message) {
+            const category = findCategory(message);
+            const categoryResponses = responses[category] || responses.default;
+            return randomFrom(categoryResponses);
+        }
+
+        // Add message to chat
+        function addMessage(text, isUser = false) {
+            const msgDiv = document.createElement('div');
+            msgDiv.className = `oi-message ${isUser ? 'user' : 'ai'}`;
+            msgDiv.innerHTML = `
+                <div class="oi-msg-avatar">${isUser ? '😊' : '🤠'}</div>
+                <div class="oi-msg-bubble">${text}</div>
+            `;
+            chatMessages.appendChild(msgDiv);
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+        }
+
+        // Show typing indicator
+        function showTyping() {
+            const typingDiv = document.createElement('div');
+            typingDiv.className = 'oi-typing';
+            typingDiv.id = 'oiTyping';
+            typingDiv.innerHTML = `
+                <div class="oi-msg-avatar" style="background: linear-gradient(135deg, var(--accent), #FF8559);">🤠</div>
+                <div class="oi-typing-dots">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            `;
+            chatMessages.appendChild(typingDiv);
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+        }
+
+        // Hide typing indicator
+        function hideTyping() {
+            const typing = document.getElementById('oiTyping');
+            if (typing) typing.remove();
+        }
+
+        // Send message
+        function sendMessage() {
+            const message = chatInput.value.trim();
+            if (!message) return;
+
+            addMessage(message, true);
+            chatInput.value = '';
+
+            // Show typing indicator
+            showTyping();
+
+            // Simulate response delay (600-1200ms for realistic feel)
+            const delay = 600 + Math.random() * 600;
+            setTimeout(() => {
+                hideTyping();
+                addMessage(getResponse(message));
+            }, delay);
+        }
+
+        // Open chat
+        function openChat() {
+            isOpen = true;
+            chatWindow.classList.add('open');
+            chatBtn.classList.add('active');
+
+            // Show opening message only once
+            if (!hasShownOpening) {
+                hasShownOpening = true;
+                setTimeout(() => {
+                    addMessage(randomFrom(responses.opening));
+                }, 400);
+            }
+
+            // Focus input
+            setTimeout(() => chatInput.focus(), 300);
+        }
+
+        // Close chat
+        function closeChat() {
+            isOpen = false;
+            chatWindow.classList.remove('open');
+            chatBtn.classList.remove('active');
+        }
+
+        // Toggle chat
+        function toggleChat() {
+            if (isOpen) {
+                closeChat();
+            } else {
+                openChat();
+            }
+        }
+
+        // Initialize
+        function init() {
+            chatBtn = document.getElementById('oiChatBtn');
+            chatWindow = document.getElementById('oiChatWindow');
+            chatMessages = document.getElementById('oiChatMessages');
+            chatInput = document.getElementById('oiChatInput');
+            chatSend = document.getElementById('oiChatSend');
+            chatClose = document.getElementById('oiChatClose');
+
+            // Event listeners
+            chatBtn.addEventListener('click', toggleChat);
+            chatClose.addEventListener('click', closeChat);
+            chatSend.addEventListener('click', sendMessage);
+            chatInput.addEventListener('keypress', (e) => {
+                if (e.key === 'Enter') sendMessage();
+            });
+
+            // Close on escape
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape' && isOpen) closeChat();
+            });
+        }
+
+        // Public API
+        return {
+            init: init,
+            open: openChat,
+            close: closeChat,
+            toggle: toggleChat
+        };
+    })();
+
+    // Initialize on DOM ready
+    document.addEventListener('DOMContentLoaded', function() {
+        OmahaInsiderChat.init();
+
         // Mobile menu toggle
         const mobileMenu = document.getElementById('mobileMenu');
         const navLinks = document.getElementById('navLinks');
@@ -1672,96 +2228,9 @@
             navLinks.classList.toggle('active');
         });
 
-        // Chat widget toggle
-        const chatWidgetBtn = document.getElementById('chatWidgetBtn');
-        const chatWidgetPopup = document.getElementById('chatWidgetPopup');
-
-        function toggleWidget() {
-            chatWidgetPopup.classList.toggle('active');
-        }
-
-        chatWidgetBtn.addEventListener('click', toggleWidget);
-
-        // AI Responses for demo
-        const aiResponses = {
-            brunch: "Dude, Early Bird in Blackstone is legit — killer pancakes and vibes. Also check out Saddle Creek Breakfast Club if you want something cozy. Sweet or savory mood today? 🥞",
-            zoo: "Henry Doorly Zoo is hands-down one of the best in the WORLD — no cap! The Desert Dome and Aquarium are mind-blowing. Pro tip: go on a weekday to avoid crowds. What exhibits are you hyped for? 🦁",
-            steakhouse: "Oh man, you're speaking my language! Gorat's is Warren Buffett's spot (he literally eats there weekly). For upscale vibes, hit 801 Chophouse downtown. Feeling fancy or classic? 🥩",
-            weather: "Right now it's typical Nebraska — unpredictable but beautiful! Check weather.gov for real-time, but pack layers just in case. Planning something outdoors? ☀️",
-            buffett: "The Oracle himself! Did you know Warren Buffett still lives in the same Dundee house he bought in 1958 for $31,500? Legend! Want more Buffett facts or Berkshire stories? 💰",
-            oldmarket: "Old Market is THE spot for vibes — cobblestone streets, local boutiques, amazing restaurants. Start at M's Pub for apps, then explore. Day or night visit? 🏙️",
-            default: "That's a great question! I know Omaha inside and out — food spots, hidden gems, events, quirky facts, you name it. What are you curious about? 🤔"
-        };
-
-        function getAIResponse(message) {
-            const lower = message.toLowerCase();
-            if (lower.includes('brunch') || lower.includes('breakfast') || lower.includes('pancake')) return aiResponses.brunch;
-            if (lower.includes('zoo') || lower.includes('animal') || lower.includes('aquarium')) return aiResponses.zoo;
-            if (lower.includes('steak') || lower.includes('dinner') || lower.includes('meat')) return aiResponses.steakhouse;
-            if (lower.includes('weather') || lower.includes('rain') || lower.includes('sunny')) return aiResponses.weather;
-            if (lower.includes('buffett') || lower.includes('warren') || lower.includes('berkshire')) return aiResponses.buffett;
-            if (lower.includes('old market') || lower.includes('downtown') || lower.includes('shop')) return aiResponses.oldmarket;
-            return aiResponses.default;
-        }
-
-        function addMessage(container, message, isUser) {
-            const messageDiv = document.createElement('div');
-            messageDiv.className = `message ${isUser ? 'user' : 'ai'}`;
-            messageDiv.innerHTML = `
-                <div class="message-avatar">${isUser ? '😊' : '🤠'}</div>
-                <div class="message-content">${message}</div>
-            `;
-            container.appendChild(messageDiv);
-            container.scrollTop = container.scrollHeight;
-        }
-
-        // Main chat functionality
-        const chatInput = document.getElementById('chatInput');
-        const chatSend = document.getElementById('chatSend');
-        const chatMessages = document.getElementById('chatMessages');
-
-        function sendMainChat() {
-            const message = chatInput.value.trim();
-            if (!message) return;
-
-            addMessage(chatMessages, message, true);
-            chatInput.value = '';
-
-            setTimeout(() => {
-                addMessage(chatMessages, getAIResponse(message), false);
-            }, 800);
-        }
-
-        chatSend.addEventListener('click', sendMainChat);
-        chatInput.addEventListener('keypress', (e) => {
-            if (e.key === 'Enter') sendMainChat();
-        });
-
-        // Widget chat functionality
-        const widgetInput = document.getElementById('widgetInput');
-        const widgetSend = document.getElementById('widgetSend');
-        const widgetMessages = document.getElementById('widgetMessages');
-
-        function sendWidgetChat() {
-            const message = widgetInput.value.trim();
-            if (!message) return;
-
-            addMessage(widgetMessages, message, true);
-            widgetInput.value = '';
-
-            setTimeout(() => {
-                addMessage(widgetMessages, getAIResponse(message), false);
-            }, 800);
-        }
-
-        widgetSend.addEventListener('click', sendWidgetChat);
-        widgetInput.addEventListener('keypress', (e) => {
-            if (e.key === 'Enter') sendWidgetChat();
-        });
-
         // Smooth scroll for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
+            anchor.addEventListener('click', function(e) {
                 e.preventDefault();
                 const target = document.querySelector(this.getAttribute('href'));
                 if (target) {
@@ -1792,6 +2261,7 @@
             el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
             observer.observe(el);
         });
+    });
     </script>
 
 <script>
