@@ -1,101 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Omaha Insider — Chat or Call 402-243-6900</title>
-  <style>
-    :root { --blue: #0066CC; --orange: #FF6B35; }
-    body { font-family: system-ui, sans-serif; margin:0; padding:0; }
-    .hero { background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('imgs/YOUR_HERO_FILENAME_HERE.jpg') center/cover no-repeat; color:white; text-align:center; padding:120px 20px; }
-    .card img { width:100%; height:220px; object-fit:cover; border-radius:12px; }
-  </style>
-</head>
-<body>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Omaha Insider - Your AI-powered local guide for everything Omaha, Nebraska. Get instant recommendations for food, events, attractions, and hidden gems.">
+    <meta name="keywords" content="Omaha, Nebraska, local guide, AI assistant, restaurants, events, attractions, Henry Doorly Zoo, Old Market">
+    <meta name="author" content="Omaha Insider">
+    <title>Omaha Insider - Your Personal Local Hype-Man for Everything Omaha</title>
 
-  <header style="position:sticky;top:0;background:white;box-shadow:0 2px 10px rgba(0,0,0,0.1);padding:15px 20px;display:flex;justify-content:space-between;align-items:center;">
-    <h1 style="margin:0;color:#0066CC;font-size:28px;">Omaha Insider</h1>
-    <a href="tel:4022436900" style="background:#FF6B35;color:white;padding:12px 24px;border-radius:8px;text-decoration:none;font-weight:bold;">Call 402-243-6900</a>
-  </header>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-  <section class="hero">
-    <h1 style="font-size:42px;margin-bottom:16px;">Your Personal Omaha Insider</h1>
-    <p style="font-size:22px;max-width:700px;margin:0 auto 30px;">The fun, local AI guide in your pocket. Chat here or call 402-243-6900.</p>
-    <button onclick="toggleChat()" style="background:#FF6B35;color:white;padding:16px 32px;border:none;border-radius:8px;font-size:20px;margin:0 10px;">Start Chatting Now</button>
-    <a href="tel:4022436900" style="background:white;color:#0066CC;padding:16px 32px;border-radius:8px;font-size:20px;text-decoration:none;margin:0 10px;">Call 402-243-6900</a>
-  </section>
+    <style>
+        :root {
+            --primary: #0066CC;
+            --primary-dark: #004C99;
+            --accent: #FF6B35;
+            --accent-light: #FF8559;
+            --green: #2D8C3C;
+            --white: #FFFFFF;
+            --cream: #FAFAF8;
+            --gray-100: #F5F5F5;
+            --gray-200: #E5E5E5;
+            --gray-600: #666666;
+            --gray-800: #333333;
+            --shadow: 0 4px 20px rgba(0,0,0,0.08);
+            --shadow-lg: 0 10px 40px rgba(0,0,0,0.12);
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
 
-  <!-- FEATURES - replace the src lines with your real long filenames -->
-  <section style="max-width:1200px;margin:60px auto;padding:0 20px;">
-    <h2 style="text-align:center;margin-bottom:40px;">Real Local Recommendations</h2>
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:25px;">
-      <div><img src="imgs/YOUR_ZOO_FILENAME_HERE.jpg" alt="Henry Doorly Zoo"><h3>Henry Doorly Zoo</h3><p>World’s best — Desert Dome & rainforest are straight fire.</p></div>
-      <div><img src="imgs/YOUR_BLACKSTONE_FILENAME_HERE.jpg" alt="Blackstone District"><h3>Blackstone District</h3><p>Best food + nightlife. Early Bird, Coneflower Creamery, steakhouses.</p></div>
-      <div><img src="imgs/YOUR_BRIDGE_FILENAME_HERE.jpg" alt="Bob Kerrey Bridge"><h3>Bob Kerrey Bridge</h3><p>Stand in Nebraska + Iowa at the same time. Insane views.</p></div>
-      <div><img src="imgs/YOUR_BUFFETT_FILENAME_HERE.jpg" alt="Warren Buffett"><h3>Warren Buffett Vibes</h3><p>Local legends and Berkshire Hathaway stories.</p></div>
-    </div>
-  </section>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-  <!-- ABOUT -->
-  <section style="background:#f8f9fa;padding:60px 20px;text-align:center;">
-    <img src="imgs/YOUR_MARKET_FILENAME_HERE.jpg" alt="Old Market" style="max-width:100%;border-radius:16px;margin-bottom:30px;">
-    <h2>Meet Your Omaha Best Friend</h2>
-    <p style="max-width:700px;margin:20px auto;font-size:18px;">I’m Omaha Insider — born and raised here. I talk like your best friend on a casual phone call: short, punchy, excited, full of “that’s legit” and “you gotta check this out”.</p>
-    <img src="imgs/YOUR_GARDENS_FILENAME_HERE.jpg" alt="Lauritzen Gardens" style="max-width:100%;border-radius:16px;">
-  </section>
+        html {
+            scroll-behavior: smooth;
+        }
 
-  <footer style="background:#1A1A1A;color:white;text-align:center;padding:60px 20px;">
-    <a href="tel:4022436900" style="background:#FF6B35;color:white;padding:18px 40px;border-radius:12px;font-size:22px;text-decoration:none;">Call 402-243-6900 Now</a>
-    <p style="margin-top:40px;">© Omaha Insider • Powered by Grok</p>
-  </footer>
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: var(--gray-800);
+            line-height: 1.6;
+            background: var(--white);
+            overflow-x: hidden;
+        }
 
-  <!-- FLOATING CHATBOT (already working) -->
-  <div id="oi-chat-bubble" onclick="toggleChat()" style="position:fixed;bottom:25px;right:25px;background:#FF6B35;color:white;width:65px;height:65px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:30px;box-shadow:0 8px 25px rgba(255,107,53,0.4);cursor:pointer;z-index:99999;">💬</div>
-  <div id="oi-chat-window" style="display:none;position:fixed;bottom:100px;right:20px;width:340px;height:520px;background:#fff;border-radius:20px;box-shadow:0 15px 40px rgba(0,0,0,0.25);overflow:hidden;z-index:100000;flex-direction:column;border:1px solid #eee;">
-    <div style="background:#0066CC;color:white;padding:18px 20px;font-weight:bold;display:flex;justify-content:space-between;align-items:center;">Omaha Insider <span onclick="toggleChat()" style="cursor:pointer;font-size:24px;line-height:1;">✕</span></div>
-    <div id="oi-messages" style="flex:1;padding:20px;overflow-y:auto;background:#f8f9fa;line-height:1.4;"></div>
-    <div style="padding:12px 15px;background:#fff;border-top:1px solid #eee;display:flex;gap:8px;">
-      <input id="oi-input" type="text" placeholder="Ask me anything about Omaha..." style="flex:1;padding:14px;border:1px solid #ddd;border-radius:12px;outline:none;font-size:16px;">
-      <button onclick="sendMessage()" style="background:#FF6B35;color:white;border:none;padding:0 24px;border-radius:12px;cursor:pointer;font-weight:bold;">Send</button>
-    </div>
-  </div>
+        /* Sticky Header */
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            background: rgba(255,255,255,0.95);
+            backdrop-filter: blur(20px);
+            box-shadow: 0 2px 20px rgba(0,0,0,0.06);
+            transition: var(--transition);
+        }
 
-  <script>
-    const openingMessage = "Hey! This is Omaha Insider — your personal local guide to all the best stuff in Omaha. Zoo tips, Blackstone food spots, Warren Buffett stories, whatever you’re craving. What’s up—what are you looking for today?";
-    async function sendMessage() { /* same working chatbot code as before */ 
-      const input = document.getElementById('oi-input');
-      const userMsg = input.value.trim();
-      if (!userMsg) return;
-      const messagesDiv = document.getElementById('oi-messages');
-      messagesDiv.innerHTML += `<div style="text-align:right;margin:12px 0;"><span style="background:#0066CC;color:white;padding:12px 18px;border-radius:20px 20px 4px 20px;display:inline-block;max-width:75%;">${userMsg}</span></div>`;
-      messagesDiv.scrollTop = messagesDiv.scrollHeight;
-      input.value = '';
-      const typingId = 'typing-' + Date.now();
-      messagesDiv.innerHTML += `<div id="${typingId}" style="text-align:left;margin:12px 0;"><span style="background:#eee;padding:12px 18px;border-radius:20px 20px 20px 4px;">...</span></div>`;
-      messagesDiv.scrollTop = messagesDiv.scrollHeight;
-      try {
-        const res = await fetch('/api/chat', { method: 'POST', headers: {'Content-Type':'application/json'}, body: JSON.stringify({message: userMsg}) });
-        const data = await res.json();
-        document.getElementById(typingId).remove();
-        messagesDiv.innerHTML += `<div style="text-align:left;margin:12px 0;"><span style="background:#eee;padding:12px 18px;border-radius:20px 20px 20px 4px;max-width:80%;">${data.reply}</span></div>`;
-        messagesDiv.scrollTop = messagesDiv.scrollHeight;
-      } catch (e) {
-        document.getElementById(typingId).remove();
-        messagesDiv.innerHTML += `<div style="text-align:left;margin:12px 0;color:#ff0000;">Whoops — try again or call 402-243-6900!</div>`;
-      }
-    }
-    function toggleChat() {
-      const win = document.getElementById('oi-chat-window');
-      win.style.display = (win.style.display === 'none' || win.style.display === '') ? 'flex' : 'none';
-      const messages = document.getElementById('oi-messages');
-      if (messages.innerHTML === '' && win.style.display === 'flex') {
-        messages.innerHTML = `<div style="background:#eee;padding:12px 16px;border-radius:18px;max-width:80%;margin-bottom:15px;">${openingMessage}</div>`;
-        messages.scrollTop = messages.scrollHeight;
-      }
-    }
-  </script>
-</body>
-</html>            font-size: 1.5rem;
+        .nav {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            text-decoration: none;
+        }
+
+        .logo-icon {
+            width: 48px;
+            height: 48px;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 800;
+            font-size: 1.2rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .logo-icon::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 30%;
+            background: linear-gradient(to top, rgba(0,0,0,0.2), transparent);
+        }
+
+        .logo-text {
+            font-size: 1.5rem;
             font-weight: 800;
             color: var(--primary);
         }
